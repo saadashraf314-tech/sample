@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="mocha">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Responsive frontend interface for a calm, accessible discovery experience."
+    />
+    <title>Studio North | Responsive Frontend Interface</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- Site header with brand, navigation, and theme toggle -->
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Studio North home">
+        <span class="brand__mark" aria-hidden="true">SN</span>
+        <span class="brand__text">Studio North</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#discovery">Discovery</a>
+        <a href="#insights">Insights</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">
+        Switch theme
+      </button>
+    </header>
+
+    <!-- Main content area for the discovery, insights, and process sections -->
+    <main id="main-content" class="page-shell" tabindex="-1">
+      <article class="hero-card">
+        <div class="hero-card__content">
+          <p class="eyebrow">Accessible 2025 interface</p>
+          <h1>Design calm digital products with clarity and care.</h1>
+          <p>
+            A responsive experience that balances thoughtful content, quick feedback, and
+            inclusive interaction for modern teams.
+          </p>
+          <div class="hero-actions">
+            <a class="button button--primary" href="#discovery">Explore discovery</a>
+            <a class="button button--secondary" href="#process">See the process</a>
+          </div>
+        </div>
+
+        <div class="hero-card__visual">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='480' viewBox='0 0 640 480'%3E%3Crect width='640' height='480' rx='32' fill='%23F2F0EA'/%3E%3Crect x='72' y='84' width='496' height='312' rx='24' fill='%23A0D4E0'/%3E%3Crect x='112' y='124' width='180' height='110' rx='16' fill='%23A5856F'/%3E%3Crect x='324' y='124' width='180' height='26' rx='13' fill='%23F2F0EA'/%3E%3Crect x='324' y='170' width='140' height='16' rx='8' fill='%23F2F0EA'/%3E%3Crect x='112' y='268' width='392' height='84' rx='18' fill='%23F2F0EA'/%3E%3Ccircle cx='492' cy='310' r='22' fill='%23A5856F'/%3E%3C/svg%3E"
+            alt="Abstract illustration of a calm digital workspace with cards and a soft blue panel"
+          />
+        </div>
+      </article>
+
+      <section id="discovery" class="discovery-grid" aria-labelledby="discovery-title">
+        <article class="panel panel--feature">
+          <p class="eyebrow">Discovery</p>
+          <h2 id="discovery-title">How might we help teams make thoughtful decisions faster?</h2>
+          <p>
+            By balancing reflection, synthesis, and quick iteration, we can create an experience that
+            feels warm, structured, and encouraging.
+          </p>
+          <div class="callout">
+            <h3>Empathy map summary</h3>
+            <p>
+              People need calm context, clear direction, and confidence that their ideas will be
+              received with respect.
+            </p>
+          </div>
+        </article>
+
+        <aside class="panel panel--sidebar" aria-label="Discovery notes">
+          <h3>Wireframe sketch</h3>
+          <p>
+            The grayscale concept places a sticky navigation bar, a hero story, a discovery panel,
+            and a compact card grid in a single flow that adapts from stack to split-screen.
+          </p>
+          <p class="muted">
+            The sketch is documented in the README and kept intentionally simple to preserve focus.
+          </p>
+        </aside>
+      </section>
+
+      <section id="insights" class="content-section" aria-labelledby="insights-title">
+        <div class="section-heading">
+          <p class="eyebrow">Insights</p>
+          <h2 id="insights-title">Flexible components for every screen.</h2>
+        </div>
+
+        <div class="filter-bar" role="toolbar" aria-label="Card filter controls">
+          <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-chip" type="button" data-filter="learn" aria-pressed="false">Learn</button>
+          <button class="filter-chip" type="button" data-filter="prototype" aria-pressed="false">Prototype</button>
+        </div>
+
+        <div class="card-grid" role="list">
+          <article class="resource-card" data-category="learn" role="listitem">
+            <h3>Clarity-first narrative</h3>
+            <p>Use concise copy and strong hierarchy to help readers scan confidently.</p>
+          </article>
+          <article class="resource-card" data-category="prototype" role="listitem">
+            <h3>Context-aware details</h3>
+            <p>Let cards reveal more structure when space allows, without overwhelming mobile.</p>
+          </article>
+          <article class="resource-card" data-category="learn" role="listitem">
+            <h3>Accessible motion</h3>
+            <p>Micro-interactions should stay subtle, informative, and never essential.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="process" class="content-section process-section" aria-labelledby="process-title">
+        <div class="section-heading">
+          <p class="eyebrow">Process</p>
+          <h2 id="process-title">A calm workflow from idea to delivery.</h2>
+        </div>
+
+        <div class="steps">
+          <article class="step-card">
+            <h3>1. Observe</h3>
+            <p>Gather the needs, constraints, and hopes behind a meaningful product moment.</p>
+          </article>
+          <article class="step-card">
+            <h3>2. Shape</h3>
+            <p>Turn findings into clear structure, information hierarchy, and navigational rhythm.</p>
+          </article>
+          <article class="step-card">
+            <h3>3. Validate</h3>
+            <p>Test with keyboard and screen-reader users to keep the experience truly inclusive.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <p>Studio North © 2026</p>
+      <a href="mailto:hello@studionorth.example">hello@studionorth.example</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
